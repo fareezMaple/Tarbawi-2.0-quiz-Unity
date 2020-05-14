@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &227038055488389469
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2831115989468807705}
+  - component: {fileID: 2407650013029672695}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2831115989468807705
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 227038055488389469}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2407650013029672695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 227038055488389469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9aec9ac8817abd49ba6cbd35bb97e7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: GoodEnding
+    clip: {fileID: 8300000, guid: 4c92dace8b3ccc646bf96ac2687b8ca6, type: 3}
+    volume: 1
+    pitch: 1.82
+    loop: 0
+    source: {fileID: 0}
+  - name: WrongTone
+    clip: {fileID: 8300000, guid: dfefab404f284da41a67a9a2250b6fd4, type: 3}
+    volume: 1
+    pitch: 2.79
+    loop: 0
+    source: {fileID: 0}
+  - name: CorrectTone
+    clip: {fileID: 8300000, guid: 42021339f5a38f847920b50c7a6b84c6, type: 3}
+    volume: 1
+    pitch: 2.57
+    loop: 0
+    source: {fileID: 0}
+  - name: BadEnding
+    clip: {fileID: 8300000, guid: 06168d85a9849c8469da06f433f252be, type: 3}
+    volume: 1
+    pitch: 2.66
+    loop: 0
+    source: {fileID: 0}
+  - name: SelectButton
+    clip: {fileID: 8300000, guid: 8c98f7541af9e57479d74a523b2d5191, type: 3}
+    volume: 1
+    pitch: 2.45
+    loop: 0
+    source: {fileID: 0}
+  - name: BackgroundMusic
+    clip: {fileID: 8300000, guid: 3d15b147af39dca449c07b9411e5d39c, type: 3}
+    volume: 0.39
+    pitch: 2.54
+    loop: 1
+    source: {fileID: 0}
+  - name: PressTone
+    clip: {fileID: 8300000, guid: 8c98f7541af9e57479d74a523b2d5191, type: 3}
+    volume: 0.82
+    pitch: 2.05
+    loop: 0
+    source: {fileID: 0}
+  - name: 
+    clip: {fileID: 0}
+    volume: 0
+    pitch: 0
+    loop: 0
+    source: {fileID: 0}
