@@ -8,6 +8,7 @@ public class MainMenuManager : MonoBehaviour
     public Animator pushPanel;
     public GameObject screenTrueOrFalse;
     public GameObject screenMultipleChoice;
+    public GameObject infoPanel;
 
     private void Awake()
     {
@@ -50,5 +51,10 @@ public class MainMenuManager : MonoBehaviour
     {
         FindObjectOfType<AudioManager>().Play("PressTone");
         screenMultipleChoice.SetActive(false);
+    }
+
+    public void userSelectInfoPanel()
+    {
+        infoPanel.SetActive(!infoPanel.activeSelf);
     }
 }
