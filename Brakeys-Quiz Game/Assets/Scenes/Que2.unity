@@ -6005,23 +6005,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questions:
-  - fact: Di dalam Quran, hanya seorang individu pada zaman Nabi Muhammad yang disebut
-      di dalam Quran
-    isTrue: 0
-  - fact: Al-Miqat adalah tempat jemaah berniat haji atau umrah
+  - fact: Surah an-Naml membawa maksud 'semut'
     isTrue: 1
-  - fact: Ikhlas adalah beribadah kepada Allah seolah-olah kita melihatNya
-    isTrue: 0
-  - fact: Ateis ialah golongan yang tidak mempercayai kewujudan Tuhan
+  - fact: Orang Nasrani mengatakan bahawa Nabi Isa adalah anak Allah manakala Yahudi
+      mengatakan bahawa Uzair anak Allah. Petunjuk Surah at-taubah
     isTrue: 1
-  - fact: Rukun Iman ada lima
-    isTrue: 0
-  - fact: Rukun nikah ada lima
-    isTrue: 1
-  - fact: Kitab Zabur diturukan kepada Nabi Sulaiman
-    isTrue: 0
-  - fact: Hukum berjudi adalah halal
-    isTrue: 0
   factText: {fileID: 2080991992}
   timeBetweenQuestons: 1
   trueAnswerText: {fileID: 766186882}
