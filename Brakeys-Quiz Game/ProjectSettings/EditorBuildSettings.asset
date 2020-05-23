@@ -10,16 +10,19 @@ EditorBuildSettings:
     guid: 2e78bff34bfd82543845824f11e5518a
   - enabled: 1
     path: Assets/Scenes/MAINMENU.unity
-    guid: 5613e7e46f638e14b8ecb72202d9eb1a
+    guid: 77398c45771ad684d8f4cbfb73a5753a
   - enabled: 1
     path: Assets/Scenes/Que1.unity
     guid: 2aa096e7053f3fe40858f314ab38230b
   - enabled: 1
+    path: Assets/Scenes/MCQ1.unity
+    guid: 2054b386c976c6b49878b6091d9b4986
+  - enabled: 1
     path: Assets/Scenes/MCQ2.unity
     guid: 367c6ca78f514a847b2f60199c212d30
   - enabled: 1
-    path: Assets/Scenes/MCQ1.unity
-    guid: 2054b386c976c6b49878b6091d9b4986
+    path: Assets/Scenes/MCQ3.unity
+    guid: 2248009370a3d7f4893dfcdb9bb08ba9
   - enabled: 1
     path: Assets/Scenes/EXIT SCENE.unity
     guid: 3ef21e1590817db43a3fed1647aecf30
