@@ -1467,7 +1467,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 84.70588, y: 15.686275}
+  m_SizeDelta: {x: 85.97015, y: 15.522388}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &454189778
 MonoBehaviour:
@@ -2158,7 +2158,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: SET 1 SELESAI
+  m_Text: SET 2 SELESAI
 --- !u!222 &578814600
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2202,7 +2202,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -161}
-  m_SizeDelta: {x: 147.8786, y: 65.335464}
+  m_SizeDelta: {x: 149.84314, y: 65.68628}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &642347386
 GameObject:
@@ -3491,7 +3491,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -108.670006}
-  m_SizeDelta: {x: 144.8115, y: 65.335464}
+  m_SizeDelta: {x: 146.70587, y: 65.68628}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1109696303
 GameObject:
@@ -3882,7 +3882,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 87.84314, y: 15.686275}
+  m_SizeDelta: {x: 88.35821, y: 15.522388}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1177505827
 MonoBehaviour:
@@ -6010,6 +6010,10 @@ MonoBehaviour:
   - fact: Orang Nasrani mengatakan bahawa Nabi Isa adalah anak Allah manakala Yahudi
       mengatakan bahawa Uzair anak Allah. Petunjuk Surah at-taubah
     isTrue: 1
+  - fact: Maksud Akidah ialah keimanan kepada Allah SWT yakni mengakui kewujudannya
+    isTrue: 1
+  - fact: Manusia akan hidup sementara sahaja di akhirat
+    isTrue: 0
   factText: {fileID: 2080991992}
   timeBetweenQuestons: 1
   trueAnswerText: {fileID: 766186882}
