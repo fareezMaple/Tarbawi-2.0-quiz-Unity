@@ -52,14 +52,4 @@ public class MainMenuManager : MonoBehaviour
         FindObjectOfType<AudioManager>().Play("PressTone");
         screenMultipleChoice.SetActive(false);
     }
-
-    public void userSelectInfo ()
-    {
-        infoPanel.SetActive(!infoPanel.activeSelf);
-    }
-
-    public void openDevUrl()
-    {
-        Application.OpenURL("http://play.google.com/store/apps/dev?id=9200064795631584674");
-    }
 }
