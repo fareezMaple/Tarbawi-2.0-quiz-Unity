@@ -6014,6 +6014,9 @@ MonoBehaviour:
     isTrue: 1
   - fact: Manusia akan hidup sementara sahaja di akhirat
     isTrue: 0
+  - fact: Jumlah Rasul dan Nabi yang disebutkan secara jelas di dalam Al-Quran ada
+      25
+    isTrue: 1
   factText: {fileID: 2080991992}
   timeBetweenQuestons: 1
   trueAnswerText: {fileID: 766186882}

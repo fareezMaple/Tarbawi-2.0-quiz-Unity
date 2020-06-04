@@ -2828,62 +2828,63 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questions:
-  - fact: Apakah golongan yang iblis tidak dapat sesatkan?
-    answer1: Sahabat Nabi
+  - fact: Haiwan apakah yang diberi wahyu
+    answer1: Labah-labah
     isTrue1: 0
-    answer2: Mukhlisin
-    isTrue2: 1
-    answer3: Muhajirin
-    isTrue3: 0
-  - fact: Siapakah Zabaniyah?
-    answer1: Orang Alim
-    isTrue1: 0
-    answer2: Malaikat
-    isTrue2: 1
-    answer3: Ahli neraka
-    isTrue3: 0
-  - fact: Juzuk berapakah yang hanya ada satu surah?
-    answer1: 1
-    isTrue1: 0
-    answer2: 5
-    isTrue2: 1
-    answer3: 10
-    isTrue3: 0
-  - fact: Surah al-Mumtahanah adalah antara 8 surah yang bermula dengan ....
-    answer1: Tasbih
-    isTrue1: 0
-    answer2: Hamdalah
+    answer2: Burung
     isTrue2: 0
-    answer3: Seruan
+    answer3: Lebah
     isTrue3: 1
-  - fact: Nabi apakah yang melaknat golongan kafir dari Bani Israel yang dinyatakan
-      di dalam Quran (dua jawapan betul)
-    answer1: Daud
+  - fact: Siapakah satu-satunya wanita yang menerima 'wahyu' daripada Allah
+    answer1: Yukabid Ibu Musa as
     isTrue1: 1
-    answer2: Isa
-    isTrue2: 1
-    answer3: Yaakub
+    answer2: Asiah Isteri Firaun
+    isTrue2: 0
+    answer3: Maryam Ibu Isa
     isTrue3: 0
-  - fact: Nabi apakah yang hidup pada zaman Talut dan Jalut?
-    answer1: Harun
-    isTrue1: 0
-    answer2: Ibrahim
+  - fact: Nabi apakah yang ada kisah menghidupkan burung dalam Quran (Petunjuk juzuk
+      3)
+    answer1: Ibrahim
+    isTrue1: 1
+    answer2: Musa
     isTrue2: 0
-    answer3: Daud
-    isTrue3: 1
-  - fact: Berapa juzuk dalam al-Quran yang tiada basmalah?
-    answer1: 1
+    answer3: Muhammad
+    isTrue3: 0
+  - fact: Berapakah jumlah Rasul dan Nabi yang disebutkan secara jelas di dalam al-Quran?
+    answer1: 5
     isTrue1: 0
-    answer2: 2
+    answer2: 313
     isTrue2: 0
-    answer3: 3
+    answer3: 25
     isTrue3: 1
-  - fact: Apakah hubungan antara Nabi Musa dan Nabi Harun? (Petunjuk surah al-A'raf).
-    answer1: Saudara sesusu
+  - fact: Dua Nabi yang mukjizatnya menghidupkan orang mati?
+    answer1: Isa dan Ibrahim
     isTrue1: 0
-    answer2: Saudara seibu
+    answer2: Isa dan Musa
     isTrue2: 1
-    answer3: Saudara tiri
+    answer3: Musa dan Ibrahim
+    isTrue3: 0
+  - fact: Surah apakah yang paling banyak meneybut nama Nabi dan Rasul? (18 nama)
+    answer1: Al-An'am
+    isTrue1: 1
+    answer2: Ali-Imran
+    isTrue2: 0
+    answer3: Al-Anbiya'
+    isTrue3: 0
+  - fact: Namakan dua haiwan yang mati dan kemudian dihidupkan kembali di dalam juzuk
+      2
+    answer1: Keldai dan burung
+    isTrue1: 1
+    answer2: Keldai dan kuda
+    isTrue2: 0
+    answer3: Burung dan kuda
+    isTrue3: 0
+  - fact: Berikut adalah nama-nama lain bagi al-Quran KECUALI
+    answer1: Al-Furqan
+    isTrue1: 0
+    answer2: Ruh
+    isTrue2: 1
+    answer3: Al-Bayan
     isTrue3: 0
   button1: {fileID: 340714489}
   button2: {fileID: 1214493968}
