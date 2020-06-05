@@ -4084,7 +4084,7 @@ PrefabInstance:
     - target: {fileID: 7162631189283182453, guid: 4e057e4be4209fb45b8067c841c9fd45,
         type: 3}
       propertyPath: m_Text
-      value: SET 3 SELESAI
+      value: SET 4 SELESAI
       objectReference: {fileID: 0}
     - target: {fileID: 7162631189500831627, guid: 4e057e4be4209fb45b8067c841c9fd45,
         type: 3}
