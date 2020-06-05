@@ -27,6 +27,5 @@ public class QuizStatistic : MonoBehaviour
         Debug.Log("Correct ans is: " + totalCorrectCount + ", wrong answer is: " + 
                   totalWrongCount + ", total is: " + totalALlAnswerCount);
         
-        
     }
 }

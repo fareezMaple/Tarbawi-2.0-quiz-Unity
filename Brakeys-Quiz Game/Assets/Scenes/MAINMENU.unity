@@ -11566,6 +11566,7 @@ GameObject:
   - component: {fileID: 1689512434}
   - component: {fileID: 1689512435}
   - component: {fileID: 1689512436}
+  - component: {fileID: 1689512437}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -11640,6 +11641,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5dfd5d754fc55f45b7910fa2f1c4bb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1689512437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689512431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 042705bcef0033142b035f8abdf09aba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TOTAL_CORRECT_ANSWER: TotCorAns
+  TOTAL_WRONG_ANSWER: TotWorAns
 --- !u!1 &1693711130
 GameObject:
   m_ObjectHideFlags: 0
@@ -11920,6 +11935,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 930915168}
         m_MethodName: Close
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1689512437}
+        m_MethodName: showQuizStat
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14013,7 +14039,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 53, y: 29}
-  m_SizeDelta: {x: 113.111115, y: 64.44444}
+  m_SizeDelta: {x: 112.58064, y: 64.451614}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2055452260
 GameObject:
