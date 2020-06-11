@@ -11,15 +11,7 @@ public class MCQEndQuiz : MonoBehaviour
     public Text scoreText;
     public Text correctText; //counter
     public Text wrongText; //counter
-    
-    private QuizStatistic quizStatistic;
 
-    // private void Start()
-    // {
-    //     quizStatistic = GetComponent<QuizStatistic>();
-    // }
-
-    // Update is called once per frame
     void Update()
     {
         checkStatus();
@@ -59,8 +51,8 @@ public class MCQEndQuiz : MonoBehaviour
 
     private void setStatistik()
     {
-        quizStatistic.addTotalCorect(MCQGameManager.correctCounter);
-        quizStatistic.addWrongCorect(MCQGameManager.wrongCounter);
+        QuizStatistic.instance.addTotalCorect(MCQGameManager.correctCounter);
+        QuizStatistic.instance.addWrongCorect(MCQGameManager.wrongCounter);
     }
 
     public void userSelectContinue()
