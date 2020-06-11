@@ -10,6 +10,10 @@
 [Ll]ogs/
 [Mm]emoryCaptures/
 
+# Excluding folder
+PC STANDALONE/
+ANDROID RELEASE/
+
 # Never ignore Asset meta data
 !/[Aa]ssets/**/*.meta
 
