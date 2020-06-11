@@ -43,7 +43,7 @@ public class QuizStatistic : MonoBehaviour
     private void addListener()
     {
         statButton = GameObject.Find("List Item stat");
-        statButton.GetComponent<Button>().onClick.AddListener((() => showQuizStat()));
+        statButton.GetComponent<Button>().onClick.AddListener(() => showQuizStat());
     }
 
     //playerPref use
