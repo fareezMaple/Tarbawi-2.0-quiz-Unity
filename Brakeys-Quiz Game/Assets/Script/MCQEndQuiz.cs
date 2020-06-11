@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,12 +11,13 @@ public class MCQEndQuiz : MonoBehaviour
     public Text scoreText;
     public Text correctText; //counter
     public Text wrongText; //counter
+    
+    private QuizStatistic quizStatistic;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    // private void Start()
+    // {
+    //     quizStatistic = GetComponent<QuizStatistic>();
+    // }
 
     // Update is called once per frame
     void Update()
@@ -36,15 +38,16 @@ public class MCQEndQuiz : MonoBehaviour
     {
         screen.SetActive(true);
         showScore();
+        setStatistik();
         //maybe boleh add sound
     }
 
     private void showScore() //score and another counter
     {
-        scoreText.text = "Score: " + MCQGameManager.scoreCounter.ToString();  //dpt dari variable dlm GameManager
-        correctText.text = "Jawapan betul: " + MCQGameManager.correctCounter.ToString();
-        wrongText.text = "Jawapan salah: " + MCQGameManager.wrongCounter.ToString();
-        //probably add particle ssytem
+        scoreText.text = "Score: " + MCQGameManager.scoreCounter;  //dpt dari variable dlm GameManager
+        correctText.text = "Jawapan betul: " + MCQGameManager.correctCounter;
+        wrongText.text = "Jawapan salah: " + MCQGameManager.wrongCounter;
+        //probably add particle system
     }
 
     private void resetAllCounter()
@@ -52,6 +55,12 @@ public class MCQEndQuiz : MonoBehaviour
         MCQGameManager.scoreCounter = 0;
         MCQGameManager.correctCounter = 0;
         MCQGameManager.wrongCounter = 0;
+    }
+
+    private void setStatistik()
+    {
+        quizStatistic.addTotalCorect(MCQGameManager.correctCounter);
+        quizStatistic.addWrongCorect(MCQGameManager.wrongCounter);
     }
 
     public void userSelectContinue()

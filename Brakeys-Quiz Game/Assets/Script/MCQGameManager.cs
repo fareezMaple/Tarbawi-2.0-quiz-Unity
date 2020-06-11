@@ -53,20 +53,13 @@ public class MCQGameManager : MonoBehaviour
         setCurrentQuestion();
         questionHasEnded();
 
-
-
-
         //Debug.Log(currentQuestion.fact + "is" + currentQuestion.isTrue);
     }
 
     public bool questionHasEnded()
     {
-        bool status = false;
+        bool status = unansweredQuestions == null || unansweredQuestions.Count == 0;
 
-        if (unansweredQuestions == null || unansweredQuestions.Count == 0)
-        {
-            status = true;
-        }
         return status;
     }
 

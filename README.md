@@ -18,7 +18,7 @@ This project is inspired by Brakeys tutorial series on YouTube
 ### Content of the quiz were taken from:
 
 - **Tarbawi app** (was available on Playstore long time ago, can't remember the developer:"))
-- [**Legasi Genius Quran** from Telegram](https://telegra.ph/Tarbawi-20-Changelogs-History-04-21)
+- [**Legasi Genius Quran** from Telegram](https://t.me/legasigeniusquran)
 
 ### Application
 
