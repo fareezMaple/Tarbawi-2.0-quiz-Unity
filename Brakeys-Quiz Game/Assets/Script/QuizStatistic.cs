@@ -5,20 +5,20 @@ using UnityEngine;
 public class QuizStatistic : MonoBehaviour
 {
     //playerPref use
-    public string TOTAL_CORRECT_ANSWER = "TotCorAns";
-    public string TOTAL_WRONG_ANSWER = "TotWorAns";
+    private string TOTAL_CORRECT_ANSWER = "TotCorAns";
+    private string TOTAL_WRONG_ANSWER = "TotWorAns";
 
     private int totalCorrectCount;
     private int totalWrongCount;
 
-    public void setTotalCorect(int _totalCorrectCount)
+    public void addTotalCorect(int _correctCount)
     {
-        totalCorrectCount += _totalCorrectCount;
+        totalCorrectCount += _correctCount;
     }
     
-    public void setWrongCorect(int _totalWrongCount)
+    public void addWrongCorect(int _wrongCount)
     {
-        totalWrongCount += _totalWrongCount;
+        totalWrongCount += _wrongCount;
     }
 
     public void showQuizStat()
@@ -28,4 +28,5 @@ public class QuizStatistic : MonoBehaviour
                   totalWrongCount + ", total is: " + totalALlAnswerCount);
         
     }
+
 }
