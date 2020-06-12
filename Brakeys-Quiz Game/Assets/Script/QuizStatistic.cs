@@ -8,6 +8,7 @@ public class QuizStatistic : MonoBehaviour
     public static QuizStatistic instance;
 
     private GameObject statButton;
+    private GameObject buttonResetAllStats;
 
     void Awake()
     {
@@ -37,13 +38,16 @@ public class QuizStatistic : MonoBehaviour
     void onLevelFinishLoading(Scene scene, LoadSceneMode mode)
     {
         addListener();
-        Debug.Log("Method level called");
+        Debug.Log("OnFinishLevelLoadingCalled");
     } 
 
     private void addListener()
     {
         statButton = GameObject.Find("List Item stat");
         statButton.GetComponent<Button>().onClick.AddListener(() => showQuizStat());
+        
+        buttonResetAllStats = GameObject.Find("DeleteAllButton");
+        buttonResetAllStats.GetComponentInChildren<Button>().onClick.AddListener((() => deleteAllStats()));
     }
 
     //playerPref use
@@ -71,6 +75,13 @@ public class QuizStatistic : MonoBehaviour
         Debug.Log("Correct ans is: " + totalCorrectCount + ", wrong answer is: " + 
                   totalWrongCount + ", total is: " + totalALlAnswerCount);
         
+    }
+
+    public void deleteAllStats()
+    {
+        PlayerPrefs.DeleteKey(TOTAL_WRONG_ANSWER);
+        PlayerPrefs.DeleteKey(TOTAL_CORRECT_ANSWER);
+        Debug.Log("Deleted all stats");
     }
 
 }

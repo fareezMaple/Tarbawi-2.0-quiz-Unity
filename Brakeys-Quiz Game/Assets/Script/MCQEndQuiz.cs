@@ -14,14 +14,16 @@ public class MCQEndQuiz : MonoBehaviour
 
     void Update()
     {
-        checkStatus();
+        if (!screen.activeSelf)
+            checkStatus();
     }
 
     private void checkStatus()
     {
         if (FindObjectOfType<MCQGameManager>().questionHasEnded())
         {
-            Invoke("showEndScreen", 1.3f); //tunggu sebentar utk show screen
+            
+            Invoke("showEndScreen", 1.2f); //tunggu sebentar utk show screen
         }
 
     }
@@ -30,7 +32,6 @@ public class MCQEndQuiz : MonoBehaviour
     {
         screen.SetActive(true);
         showScore();
-        setStatistik();
         //maybe boleh add sound
     }
 
@@ -53,23 +54,27 @@ public class MCQEndQuiz : MonoBehaviour
     {
         QuizStatistic.instance.addTotalCorect(MCQGameManager.correctCounter);
         QuizStatistic.instance.addWrongCorect(MCQGameManager.wrongCounter);
+        Debug.Log("Statistik set to correct: " + MCQGameManager.correctCounter + ", wrong: " + MCQGameManager.wrongCounter);
     }
 
     public void userSelectContinue()
     {
         //Debug.Log("Contniue levelll");
+        setStatistik();
         resetAllCounter();
     }
 
     public void userSelectMenu()
     {
         SceneManager.LoadScene("MAINMENU", LoadSceneMode.Single);
+        setStatistik();
         resetAllCounter();
     }
 
     public void userSelectRestartLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        setStatistik();
         resetAllCounter();
     }  
 }
