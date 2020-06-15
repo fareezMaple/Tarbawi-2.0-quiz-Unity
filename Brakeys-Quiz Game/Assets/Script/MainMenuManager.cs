@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MainMenuManager : MonoBehaviour
 {
     public Animator pushPanel;
     public GameObject screenTrueOrFalse;
     public GameObject screenMultipleChoice;
-    public GameObject infoPanel;
+    public GameObject StatPanel;
 
     private void Awake()
     {
@@ -51,5 +52,11 @@ public class MainMenuManager : MonoBehaviour
     {
         FindObjectOfType<AudioManager>().Play("PressTone");
         screenMultipleChoice.SetActive(false);
+    }
+
+    public void closePanel()
+    {
+        StatPanel.SetActive(false);
+        //TODO: add close button
     }
 }
