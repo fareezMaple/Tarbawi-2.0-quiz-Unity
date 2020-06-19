@@ -8,7 +8,7 @@ public class QuizStatistic : MonoBehaviour
     public static QuizStatistic instance;
 
     private GameObject statButton;
-    private GameObject buttonResetAllStats;
+    private GameObject buttonClosePanel;
     
     public GameObject statPanel;
     public Text totalCorrectText;
@@ -51,8 +51,8 @@ public class QuizStatistic : MonoBehaviour
         statButton = GameObject.Find("List Item stat");
         statButton.GetComponent<Button>().onClick.AddListener(() => showQuizStat());
         
-        buttonResetAllStats = GameObject.Find("DeleteAllButton");
-        buttonResetAllStats.GetComponentInChildren<Button>().onClick.AddListener(() => deleteAllStats());
+        buttonClosePanel = GameObject.Find("ClosePanelButton");
+        buttonClosePanel.GetComponentInChildren<Button>().onClick.AddListener(() => hideStatPanel());
         
         statPanel = GameObject.Find("StatistikPanel");
         totalCorrectText = GameObject.Find("jumlah soalan betul").GetComponent<Text>();
@@ -87,15 +87,15 @@ public class QuizStatistic : MonoBehaviour
         Debug.Log("Correct ans is: " + totalCorrectCount + ", wrong answer is: " + 
                   totalWrongCount + ", total is: " + allAnswerCount);
 
-        statPanel.SetActive(true);
+        LeanTween.moveY(statPanel.GetComponent<RectTransform>(), 110f, .5f).setEase(LeanTweenType.easeInExpo);
+        //TODO: Link dgn text
         
+
     }
 
-    public void deleteAllStats()
+    public void hideStatPanel()
     {
-        PlayerPrefs.DeleteKey(TOTAL_WRONG_ANSWER);
-        PlayerPrefs.DeleteKey(TOTAL_CORRECT_ANSWER);
-        Debug.Log("Deleted all stats");
+        LeanTween.moveY(statPanel.GetComponent<RectTransform>(), 700f, .5f).setEase(LeanTweenType.pingPong);
     }
 
 }
