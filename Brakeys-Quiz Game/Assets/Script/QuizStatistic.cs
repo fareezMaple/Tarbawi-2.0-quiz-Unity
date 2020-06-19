@@ -88,7 +88,7 @@ public class QuizStatistic : MonoBehaviour
                   totalWrongCount + ", total is: " + allAnswerCount);
 
         statPanel.SetActive(true);
-        //TODO: assign all text and stuff
+        
     }
 
     public void deleteAllStats()
