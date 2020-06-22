@@ -9,11 +9,6 @@ public class EndQuiz : MonoBehaviour
     public GameObject screen;
     public Text correctText;
     public Text wrongText;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -49,21 +44,30 @@ public class EndQuiz : MonoBehaviour
         GameManager.wrongCounter = 0;
     }
 
+    private void setStatistik()
+    {
+        QuizStatistic.instance.addTotalCorect(GameManager.correctCounter);
+        QuizStatistic.instance.addWrongCorect(GameManager.wrongCounter);
+    }
+
     public void userSelectContinue()
     {
         Debug.Log("Contniue levelll");
+        setStatistik();
         resetAllCounter();
     }
 
     public void userSelectMenu ()
     {
         SceneManager.LoadScene("MAINMENU", LoadSceneMode.Single);
+        setStatistik();
         resetAllCounter();
     }
 
     public void userSelectRestartLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        setStatistik();
         resetAllCounter();
     }
 }
