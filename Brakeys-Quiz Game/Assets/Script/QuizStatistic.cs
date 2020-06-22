@@ -88,8 +88,10 @@ public class QuizStatistic : MonoBehaviour
                   totalWrongCount + ", total is: " + allAnswerCount);
 
         LeanTween.moveY(statPanel.GetComponent<RectTransform>(), 110f, .5f).setEase(LeanTweenType.easeInExpo);
-        //TODO: Link dgn text
-        
+        totalCorrectText.text = totalCorrectCount.ToString();
+        totalWrongText.text = totalWrongCount.ToString();
+        totalAllText.text = (totalCorrectCount + totalWrongCount).ToString();
+
 
     }
 
