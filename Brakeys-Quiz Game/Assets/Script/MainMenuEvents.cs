@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using GooglePlayGames;
 using GooglePlayGames.BasicApi;
@@ -9,13 +10,15 @@ public class MainMenuEvents : MonoBehaviour
 {
     private Text signInButtonText;
     private Text authText;
+    public GameObject achButton;
+    public GameObject ldrButton;
     
     // Start is called before the first frame update
     void Start()
     {
         signInButtonText = GameObject.Find("SignInButton").GetComponentInChildren<Text>();
         authText = GameObject.Find("authStatus").GetComponent<Text>();
-        
+
         PlayGamesClientConfiguration config = new PlayGamesClientConfiguration.Builder().Build();
 
         PlayGamesPlatform.DebugLogEnabled = true;
@@ -59,6 +62,36 @@ public class MainMenuEvents : MonoBehaviour
             Debug.Log("UI resetted");
             signInButtonText.text = "Sign in";
             authText.text = "";
+        }
+    }
+
+    private void Update()
+    {
+        achButton.SetActive(Social.localUser.authenticated);
+        ldrButton.SetActive(Social.localUser.authenticated);
+    }
+
+    public void showAchievements()
+    {
+        if (PlayGamesPlatform.Instance.localUser.authenticated)
+        {
+            PlayGamesPlatform.Instance.ShowAchievementsUI();
+        }
+        else
+        {
+            Debug.Log("Cannot show achievements bruh");
+        }
+    }
+
+    public void showLeaderboards()
+    {
+        if (PlayGamesPlatform.Instance.localUser.authenticated)
+        {
+            PlayGamesPlatform.Instance.ShowLeaderboardUI();
+        }
+        else
+        {
+            Debug.Log("Leaderboard can show!!");
         }
     }
 }

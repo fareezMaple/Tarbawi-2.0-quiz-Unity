@@ -24,8 +24,9 @@
 
 public static class GPGSIds
 {
-        public const string achievement_test_achievnement = "CggIqJn4xQEQAhAD"; // <GPGSID>
         public const string leaderboard_score_leaderboard = "CggIqJn4xQEQAhAB"; // <GPGSID>
+        public const string achievement_smart = "CggIqJn4xQEQAhAG"; // <GPGSID>
+        public const string achievement_welcome_to_tarbawi_20 = "CggIqJn4xQEQAhAD"; // <GPGSID>
 
 }
 
