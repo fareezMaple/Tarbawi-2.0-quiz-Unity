@@ -9,6 +9,7 @@ public class MainMenuEvents : MonoBehaviour
 {
     private Text signInButtonText;
     private Text authText;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -57,6 +58,7 @@ public class MainMenuEvents : MonoBehaviour
             //RESET UI
             Debug.Log("UI resetted");
             signInButtonText.text = "Sign in";
+            authText.text = "";
         }
     }
 }
