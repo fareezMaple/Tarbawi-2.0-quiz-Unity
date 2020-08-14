@@ -1,4 +1,5 @@
 ﻿using System;
+using GooglePlayGames;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -73,6 +74,14 @@ public class QuizStatistic : MonoBehaviour
     {
         totalCorrectCount += _correctCount;
         PlayerPrefs.SetInt(TOTAL_CORRECT_ANSWER, totalCorrectCount);
+
+        if (Social.localUser.authenticated && _correctCount == 8) //user get full marks
+        {
+            PlayGamesPlatform.Instance.IncrementAchievement(GPGSIds.achievement_smart, 1, success =>
+            {
+                Debug.Log("Smart achievement " + success);
+            });
+        }
     }
     
     public void addWrongCorect(int _wrongCount)
