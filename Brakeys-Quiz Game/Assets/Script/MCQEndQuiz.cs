@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using GooglePlayGames;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -32,7 +33,18 @@ public class MCQEndQuiz : MonoBehaviour
     {
         screen.SetActive(true);
         showScore();
+        
+        QuizStatistic.instance.addTotalQuizAnswered();
         //maybe boleh add sound
+        
+        if (Social.localUser.authenticated)
+        {
+            PlayGamesPlatform.Instance.ReportProgress(GPGSIds.achievement_completed_first_quiz,100.0f,
+                (bool success) =>
+                {
+                    Debug.Log("Welcome" + success);
+                });
+        }
     }
 
     private void showScore() //score and another counter

@@ -30,6 +30,8 @@ public class EndQuiz : MonoBehaviour
         screen.SetActive(true);
         showScore();
         
+        QuizStatistic.instance.addTotalQuizAnswered();
+        
         //maybe boleh add sound
 
         if (Social.localUser.authenticated)

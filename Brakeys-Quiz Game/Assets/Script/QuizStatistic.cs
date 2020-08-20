@@ -16,6 +16,8 @@ public class QuizStatistic : MonoBehaviour
     public Text totalWrongText;
     public Text totalAllText;
 
+    public int totalQuizAnswered;
+
     void Awake()
     {
         if (instance == null)
@@ -33,18 +35,31 @@ public class QuizStatistic : MonoBehaviour
     {
         totalCorrectCount = PlayerPrefs.GetInt(TOTAL_CORRECT_ANSWER);
         totalWrongCount = PlayerPrefs.GetInt(TOTAL_WRONG_ANSWER);
-        
+        totalQuizAnswered = PlayerPrefs.GetInt(TOTAL_QUIZ_SET_ANSWERED);
     }
 
     private void OnEnable()
     {
         SceneManager.sceneLoaded += onLevelFinishLoading;
+        
+        //leaderboard
+        if (PlayGamesPlatform.Instance.localUser.authenticated)
+        {
+            PlayGamesPlatform.Instance.ReportScore(totalCorrectCount,GPGSIds.leaderboard_score_leaderboard, success =>
+            {
+                Debug.Log("Leaderboard set");
+            });
+        }
+        
     }
 
     void onLevelFinishLoading(Scene scene, LoadSceneMode mode)
     {
         addListener();
         Debug.Log("OnFinishLevelLoadingCalled");
+        
+        
+        
     } 
 
     private void addListener()
@@ -66,6 +81,7 @@ public class QuizStatistic : MonoBehaviour
     //playerPref use
     private string TOTAL_CORRECT_ANSWER = "TotCorAns";
     private string TOTAL_WRONG_ANSWER = "TotWorAns";
+    private string TOTAL_QUIZ_SET_ANSWERED = "TotSetAns";
 
     private int totalCorrectCount;
     private int totalWrongCount;
@@ -100,8 +116,21 @@ public class QuizStatistic : MonoBehaviour
         totalCorrectText.text = totalCorrectCount.ToString();
         totalWrongText.text = totalWrongCount.ToString();
         totalAllText.text = (totalCorrectCount + totalWrongCount).ToString();
+    }
 
+    public void addTotalQuizAnswered()
+    {
+        totalQuizAnswered++;
+        PlayerPrefs.SetInt(TOTAL_QUIZ_SET_ANSWERED, totalQuizAnswered);
 
+        if (PlayGamesPlatform.Instance.localUser.authenticated)
+        {
+            if (totalQuizAnswered >= 10 && totalQuizAnswered < 11)
+            {
+                PlayGamesPlatform.Instance.ReportProgress(GPGSIds.achievement_brainy, 100.0f,
+                    success => { Debug.Log("Brainy!!"); });
+            }
+        }
     }
 
     public void hideStatPanel()
