@@ -6008,7 +6008,7 @@ MonoBehaviour:
   - fact: Surah an-Naml membawa maksud 'semut'
     isTrue: 1
   - fact: Orang Nasrani mengatakan bahawa Nabi Isa adalah anak Allah manakala Yahudi
-      mengatakan bahawa Uzair anak Allah. Petunjuk Surah at-taubah
+      mengatakan bahawa Uzair anak Allah. (Petunjuk Surah at-taubah)
     isTrue: 1
   - fact: Maksud Akidah ialah keimanan kepada Allah SWT yakni mengakui kewujudannya
     isTrue: 1
@@ -6017,6 +6017,14 @@ MonoBehaviour:
   - fact: Jumlah Rasul dan Nabi yang disebutkan secara jelas di dalam Al-Quran ada
       25
     isTrue: 1
+  - fact: Mumaiyyiz adalah adalah satu darpada syarat sah berpuasa di bulan Ramadan
+    isTrue: 1
+  - fact: Aminah meneruskan ibadat puasanya walaupun didatangi haid kerana sudah hampir
+      masuk waktu berbuka puasa
+    isTrue: 0
+  - fact: Puasa kakak tidak sah kerana masih belum menggantikan puasa yang tertinggal
+      pada tahun lepas
+    isTrue: 0
   factText: {fileID: 2080991992}
   timeBetweenQuestons: 1
   trueAnswerText: {fileID: 766186882}

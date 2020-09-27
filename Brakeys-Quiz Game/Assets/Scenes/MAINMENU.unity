@@ -736,15 +736,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1689512435}
-        m_MethodName: showPanel
-        m_Mode: 1
+      - m_Target: {fileID: 1689512434}
+        m_MethodName: TFlevel
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Que2
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &118254902
@@ -8124,7 +8124,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -64.28, y: -29.48}
-  m_SizeDelta: {x: 128.56, y: 58.96}
+  m_SizeDelta: {x: 138.45052, y: 58.7372}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &922460379
 GameObject:
@@ -12162,7 +12162,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -165.4, y: -29.479996}
-  m_SizeDelta: {x: 119.6, y: 58.96}
+  m_SizeDelta: {x: 124.25256, y: 58.7372}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1482484100
 GameObject:
@@ -12487,7 +12487,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -63.64, y: -29.479996}
-  m_SizeDelta: {x: 127.28, y: 58.96}
+  m_SizeDelta: {x: 131.89761, y: 58.7372}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1507612097
 GameObject:
@@ -15191,7 +15191,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 41.4, y: 31.979}
-  m_SizeDelta: {x: 100.4, y: 64.08}
+  m_SizeDelta: {x: 103.50171, y: 65.2901}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1743305117
 GameObject:
@@ -17002,7 +17002,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: V 2.2
+  m_Text: V 2.5
 --- !u!222 &1949318491
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17417,7 +17417,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 53, y: 29}
-  m_SizeDelta: {x: 115.759995, y: 64.08}
+  m_SizeDelta: {x: 112.23891, y: 64.19795}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2055452260
 GameObject:

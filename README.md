@@ -14,6 +14,10 @@ This project is inspired by Brakeys tutorial series on YouTube - [Episod 1](http
 
 - **Tarbawi app** (was available on Playstore long time ago, can't remember the developer:"))
 - [**Legasi Genius Quran** from Telegram](https://t.me/legasigeniusquran) - [View admin's permission](https://user-images.githubusercontent.com/60868965/89733739-2d629980-da8a-11ea-821a-9d70564362ae.jpg)
+- [Quizizz P.Islam tahun 6](https://quizizz.com/admin/quiz/5ba708d8371a500019c608a1/quiz-pendidikan-islam-tahun-6-1)
+
+<!-- ### Game UI
+todo -->
 
 ### Application
 
