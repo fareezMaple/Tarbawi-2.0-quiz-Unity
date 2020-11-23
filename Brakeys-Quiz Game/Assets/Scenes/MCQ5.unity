@@ -2828,63 +2828,64 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questions:
-  - fact: Haiwan apakah yang diberi wahyu
-    answer1: Labah-labah
-    isTrue1: 0
-    answer2: Burung
-    isTrue2: 0
-    answer3: Lebah
-    isTrue3: 1
-  - fact: Siapakah satu-satunya wanita yang menerima 'wahyu' daripada Allah
-    answer1: Yukabid Ibu Musa as
+  - fact: Apakah nama lain bagi Madinah?
+    answer1: Yasrib
     isTrue1: 1
-    answer2: Asiah Isteri Firaun
+    answer2: Hudaibiyah
+    isTrue2: 0
+    answer3: Taif
+    isTrue3: 0
+  - fact: Apahkah perumpaan bidadari syurga dalam Surah al-Saaffat?
+    answer1: Matahari terik
+    isTrue1: 0
+    answer2: Telur yang tersimpan rapi
+    isTrue2: 1
+    answer3: Bintang bersinar
+    isTrue3: 0
+  - fact: Kaum apakah yang mampu memahat gunung-ganang untuk dijadikan rumah?
+    answer1: Kaum 'Ad
+    isTrue1: 0
+    answer2: Kaum Tasmud
+    isTrue2: 1
+    answer3: Kaum Madyan
+    isTrue3: 0
+  - fact: Siapakah dalam kalangan bapa saudara Nabi SAW yang tidak beriman disebut
+      dalam al-Quran?
+    answer1: Abu Lahab
+    isTrue1: 1
+    answer2: Abu Jahal
+    isTrue2: 0
+    answer3: Abu Talib
+    isTrue3: 0
+  - fact: Allah meminta Nabi Ibrahim AS mendapatkan __ ekor burung bagi menjawab persoalan
+      menghidupkan yang mati (Juz 3)
+    answer1: Dua
+    isTrue1: 0
+    answer2: Tiga
+    isTrue2: 0
+    answer3: Empat
+    isTrue3: 1
+  - fact: Apakah mukjizat Nabi Yusuf AS
+    answer1: Mentafsir mimpi
+    isTrue1: 1
+    answer2: Membelah lautan dengan tongkat
+    isTrue2: 0
+    answer3: Api menjadi angin
+    isTrue3: 0
+  - fact: Berapakah hari kaum Nabi Soleh diberi masa sebelum diturunkan azab ke atas
+      mereka? (Surah Hud)
+    answer1: 1 hari
+    isTrue1: 0
+    answer2: '2 hari '
+    isTrue2: 0
+    answer3: 3 hari
+    isTrue3: 1
+  - fact: Apakah panggilan Bani Israel kepada Maryam berdasarkan Surah Maryam?
+    answer1: Maryam Saudara Perempuan Harun
+    isTrue1: 1
+    answer2: Maryam Anak Imran
     isTrue2: 0
     answer3: Maryam Ibu Isa
-    isTrue3: 0
-  - fact: Nabi apakah yang ada kisah menghidupkan burung dalam Quran (Petunjuk juzuk
-      3)
-    answer1: Ibrahim
-    isTrue1: 1
-    answer2: Musa
-    isTrue2: 0
-    answer3: Muhammad
-    isTrue3: 0
-  - fact: Berapakah jumlah Rasul dan Nabi yang disebutkan secara jelas di dalam al-Quran?
-    answer1: 5
-    isTrue1: 0
-    answer2: 313
-    isTrue2: 0
-    answer3: 25
-    isTrue3: 1
-  - fact: Dua Nabi yang mukjizatnya menghidupkan orang mati?
-    answer1: Isa dan Ibrahim
-    isTrue1: 0
-    answer2: Isa dan Musa
-    isTrue2: 1
-    answer3: Musa dan Ibrahim
-    isTrue3: 0
-  - fact: Surah apakah yang paling banyak meneybut nama Nabi dan Rasul? (18 nama)
-    answer1: Al-An'am
-    isTrue1: 1
-    answer2: Ali-Imran
-    isTrue2: 0
-    answer3: Al-Anbiya'
-    isTrue3: 0
-  - fact: Namakan dua haiwan yang mati dan kemudian dihidupkan kembali di dalam juzuk
-      2
-    answer1: Keldai dan burung
-    isTrue1: 1
-    answer2: Keldai dan kuda
-    isTrue2: 0
-    answer3: Burung dan kuda
-    isTrue3: 0
-  - fact: Berikut adalah nama-nama lain bagi al-Quran KECUALI
-    answer1: Al-Furqan
-    isTrue1: 0
-    answer2: Ruh
-    isTrue2: 1
-    answer3: Al-Bayan
     isTrue3: 0
   button1: {fileID: 340714489}
   button2: {fileID: 1214493968}
@@ -4084,7 +4085,7 @@ PrefabInstance:
     - target: {fileID: 7162631189283182453, guid: 4e057e4be4209fb45b8067c841c9fd45,
         type: 3}
       propertyPath: m_Text
-      value: SET 4 SELESAI
+      value: SET 5 SELESAI
       objectReference: {fileID: 0}
     - target: {fileID: 7162631189500831627, guid: 4e057e4be4209fb45b8067c841c9fd45,
         type: 3}

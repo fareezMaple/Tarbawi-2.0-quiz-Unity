@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MCQ4.unity
     guid: f867942203ac99840872ff580447daec
   - enabled: 1
+    path: Assets/Scenes/MCQ5.unity
+    guid: 10c99bd0d74ee204eb2bf1faf66fa45b
+  - enabled: 1
     path: Assets/Scenes/EXIT SCENE.unity
     guid: 3ef21e1590817db43a3fed1647aecf30
   m_configObjects: {}
