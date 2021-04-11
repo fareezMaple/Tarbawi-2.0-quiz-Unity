@@ -6,8 +6,6 @@
 
 ## Islamic quiz
 
-### Currently the development is **ACTIVE**
-
 This project is inspired by Brakeys tutorial series on YouTube - [Episod 1](https://www.youtube.com/watch?v=g_Ff1SPhidg)[, 2](https://www.youtube.com/watch?v=5CW1yGsVg4k)[, 3](https://www.youtube.com/watch?v=zLnnpUsxu0U)[, 4](https://www.youtube.com/watch?v=5XuzybmR5Lw)
 
 ### Content of the quiz were taken from:
@@ -24,5 +22,7 @@ todo -->
 Changelogs and release history: https://telegra.ph/Tarbawi-20-Changelogs-History-04-21
 
 _Download app on Google Play store: https://play.google.com/store/apps/details?id=com.maplerr.tarbawiDua_
+
+Rate the app :star::star::star::star::star:
 
 _Not available on Apple / Windows / Linux_
